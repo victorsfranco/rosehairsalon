@@ -1,0 +1,12 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-size: 100%; /* 16px */
+}
+
+#header1 {
+  height: 4.5rem;
+}
