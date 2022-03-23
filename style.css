@@ -1,12 +1,54 @@
-/*RESET*/
+/*====================RESET===============*/
 * {
   margin: 0;
   padding: 0;
-}
-:root {
-  font-size: 100%; /* 16px */
+  box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+/*====================BASE===============*/
+body {
+  font: 400 1rem 'DM Sans', sans-serif;
+}
+
+h1 {
+  font: 700 1.875rem 'Poppins', sans-serif;
+}
+/*====================VARIABLES===============*/
+:root {
+  --hue: 159;
+  --title-color: hsl(159, 41%, 10%);
+  --text-color: hsl(0, 0%, 46%);
+  --text-color-light: hsl(0, 0%, 98%);
+  --base-color: hsl(159, 36%, 57%);
+  --base-color-alt: hsl(159, 57%, 53%);
+  --base-color-second: hsl(159, 65%, 88%);
+  --body-color: hsl(0, 0%, 98%);
+
+  font-size: 100%; /* 16px */
+}
+/*====================LAYOUT===============*/
 #header1 {
   height: 4.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+}
+
+.container {
+  width: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
