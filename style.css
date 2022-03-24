@@ -16,10 +16,14 @@ img {
 /*====================BASE===============*/
 body {
   font: 400 1rem 'DM Sans', sans-serif;
+  color: var(--text-color);
+  -webkit-font-smoothing: auto;
+
 }
 
 h1 {
   font: 700 1.875rem 'Poppins', sans-serif;
+  color: var(--title-color);
 }
 /*====================VARIABLES===============*/
 :root {
@@ -36,19 +40,47 @@ h1 {
 }
 /*====================LAYOUT===============*/
 #header1 {
-  height: 4.5rem;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 2rem;
+  
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  height: 4.5rem;
+  align-items: center;
 }
 
 .logo {
+  font: 800 1.31rem 'Poppins', sans-serif;
+  color: var(--title-color);
+
+}
+
+.logo span {
+  color: var(--base-color);
 }
 
 .container {
   width: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+}
+.section {
+  padding: 5rem 0;
+}
+
+/*============= HOME ===========*/
+#home .container {
+  margin: 0
+}
+
+#home .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
