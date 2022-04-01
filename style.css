@@ -47,12 +47,12 @@ h1 {
 /*====================VARIABLES===============*/
 :root {
   --hue: 159;
-  --title-color: hsl(159, 41%, 10%);
+  --title-color:hsl(var(--hue), 41%, 10%);
   --text-color: hsl(0, 0%, 46%);
   --text-color-light: hsl(0, 0%, 98%);
-  --base-color: hsl(159, 36%, 57%);
-  --base-color-alt: hsl(159, 57%, 53%);
-  --base-color-second: hsl(159, 65%, 88%);
+  --base-color: hsl(var(--hue), 36%, 57%);
+  --base-color-alt: hsl(var(--hue), 57%, 53%);
+  --base-color-second: hsl(var(--hue), 65%, 88%);
   --body-color: hsl(0, 0%, 98%);
 
   font-size: 100%; /* 16px */
