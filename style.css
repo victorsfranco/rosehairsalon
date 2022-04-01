@@ -24,7 +24,26 @@ body {
 h1 {
   font: 700 1.875rem 'Poppins', sans-serif;
   color: var(--title-color);
+  -webkit-font-smoothing: auto;
 }
+
+.button {
+  background-color: var(--base-color);
+  color: var(--text-color-light);
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  font: 500 1rem 'DM Sans', sans-serif;
+  transition: background 0.3s;
+
+}
+
+.button:hover {
+  background: var(--base-color-alt);
+}
+
 /*====================VARIABLES===============*/
 :root {
   --hue: 159;
@@ -80,7 +99,42 @@ nav {
   margin: 0
 }
 
+#home .image {
+  position: relative;
+}
+
+#home .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -16.8%;
+  right: -16.8%;
+  z-index: 0;
+}
+
+#home .image img {
+  position: relative;
+  right: 2.93rem;
+}
+
+#home .image img,
+#home .image::before {
+  border-radius: 0.25rem;
+}
+
 #home .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  text-align: center;
+
+}
+
+#home .text h1 {
+  margin-bottom: 1rem;
+}
+
+#home .text p {
+  margin-bottom: 2rem;
 }
