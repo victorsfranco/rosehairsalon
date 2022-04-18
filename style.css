@@ -61,7 +61,7 @@ body {
   --header-height: 4.5rem;
 
   /*========== COLORS =========*/
-  --hue: 159;
+  --hue: 345;
   --title-color:hsl(var(--hue), 41%, 10%);
   --text-color: hsl(0, 0%, 46%);
   --text-color-light: hsl(0, 0%, 98%);
@@ -85,7 +85,7 @@ body {
 .section {
   padding: 5rem 0;
 }
-#header1 {
+#header {
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 2rem;
   display: flex;
