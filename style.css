@@ -71,7 +71,7 @@ body {
   --header-height: 4.5rem;
 
   /*========== COLORS =========*/
-  --hue: 159;
+  --hue: 345;
   --title-color:hsl(var(--hue), 41%, 10%);
   --text-color: hsl(0, 0%, 46%);
   --text-color-light: hsl(0, 0%, 98%);
