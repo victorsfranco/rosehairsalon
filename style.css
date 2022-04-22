@@ -127,6 +127,19 @@ main {
   margin-top: calc(var(--header-height) + 2rem);
 }
 
+/*==================== TOOLBAR ====================*/
+::-webkit-scrollbar {
+  width: 0.40rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--body-color)
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--base-color);
+}
+
 /*==================== LOGO ====================*/
 .logo {
   font: 800 1.31rem 'Poppins', sans-serif;
