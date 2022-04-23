@@ -193,9 +193,44 @@ nav .menu {
 
 /*==================== SHOW MENU ====================*/
 
+@keyframes appear {
+  from {
+    visibility: hidden;
+    opacity: 0;
+
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+}
+
+@keyframes slideDown {
+  from {
+    top: -100%
+
+  }
+  to {
+    top: 0%
+  }
+}
+
+
 nav.show .menu {
   opacity: 1;
   visibility: visible;
+  animation: 0.75s cubic-bezier(0.175, -0.55, 0.32, 1.275) 0.03s 1 normal backwards slideDown;
+
+  /*
+   animation-duration: 0.75s;
+   animation-timing-function: cubic-bezier(0.175, -0.55, 0.32, 1.275);
+   animation-delay: 0.03s;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-fill-mode: backwards;
+   animation-name: slideDown;
+  */
 
   background: var(--body-color);
 
@@ -209,6 +244,7 @@ nav.show .menu {
   display: grid;
   place-content: center;
 }
+
 
 nav.show ul.grid {
   gap: 4rem;
@@ -230,8 +266,10 @@ nav .icon-close {
 }
 
 nav.show div.icon-close {
-  visibility: visible;
-  opacity: 1;
+  animation-name: appear;
+  animation-duration: 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
 }
 /*============= Home ===========*/
 #home {

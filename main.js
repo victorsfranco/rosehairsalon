@@ -12,7 +12,7 @@ pessoa.falar()
 */
 // DOM - Document Object Model:
 
-/* Toggle menu by clicking*/
+// Toggle menu by clicking
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -22,7 +22,7 @@ for (const element of toggle) {
   })
 }
 
-/* Hide menu by clicking on nav links*/
+// Hide menu by clicking on nav links
 const links = document.querySelectorAll('nav ul li a')
 
 for (const link of links) {
@@ -31,6 +31,7 @@ for (const link of links) {
   })
 }
 
+// Making window scroll to element
 function scrollToNav(elementId) {
   console.log(elementId)
   const scrollToElement = document.getElementById(elementId)
