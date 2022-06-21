@@ -1,17 +1,3 @@
-// DECLARANDO UMA CONSTANTE COM FUNÇÃO:
-/*
-const pessoa = {
-  name: 'victor',
-  age: 19,
-  falar: function() {
-    alert(pessoa.age)
-  }
-}
-
-pessoa.falar()
-*/
-// DOM - Document Object Model:
-
 // Toggle menu by clicking
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
@@ -40,3 +26,16 @@ function scrollToNav(elementId) {
     behavior: 'smooth'
   })
 }
+
+//Change header on scroll
+
+const header = document.querySelector('header')
+const navHeight = header.offsetHeight
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY >= navHeight) {
+    header.classList.add('scroll')
+  } else {
+    header.classList.remove('scroll')
+  }
+})

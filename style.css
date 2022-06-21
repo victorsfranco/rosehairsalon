@@ -123,6 +123,10 @@ body {
   
 }
 
+#header.scroll {
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+}
+
 main {
   margin-top: calc(var(--header-height) + 2rem);
 }
@@ -216,21 +220,29 @@ nav .menu {
   }
 }
 
+@keyframes slideUp {
+  from {
+    top: 0%
 
-nav.show .menu {
+  }
+  to {
+    top: -100%
+  }
+}
+
+
+nav.show .menu{
   opacity: 1;
   visibility: visible;
-  animation: 0.75s cubic-bezier(0.175, -0.55, 0.32, 1.275) 0.03s 1 normal backwards slideDown;
 
-  /*
-   animation-duration: 0.75s;
-   animation-timing-function: cubic-bezier(0.175, -0.55, 0.32, 1.275);
-   animation-delay: 0.03s;
-   animation-iteration-count: 1;
-   animation-direction: normal;
-   animation-fill-mode: backwards;
-   animation-name: slideDown;
-  */
+  animation-duration: 0.75s;
+  animation-timing-function: cubic-bezier(0.175, -0.55, 0.32, 1.275);
+  animation-delay: 0.03s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-name: slideDown;
+
 
   background: var(--body-color);
 
@@ -271,6 +283,17 @@ nav.show div.icon-close {
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
+
+nav .menu {
+  animation-duration: 3.75s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.03s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-name: slideUp;
+}
+
+
 /*============= Home ===========*/
 #home {
   overflow: hidden;
@@ -359,10 +382,6 @@ nav.show div.icon-close {
 
 }
 
-#about .text h2 {
-
-}
-
 /*============= Services ===========*/
 
 .cards.grid {
@@ -371,8 +390,50 @@ nav.show div.icon-close {
 
 .card {
   padding: 3.625rem 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08); 
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
+}
+
+/*============= Testimonials ===========*/
+
+#testimonials {
+  background: white;
+}
+
+#testimonials blockquote{
+ padding: 2rem; 
+ box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+ border-radius: 0.25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-color)
+}
+
+#testimonials blockquote p span {
+  font: 700 3rem serif;
+  
+  position: absolute;
+  left: -1.875rem;
+  top: -0.5rem;
+  color: var(--base-color);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+#testimonials cite img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
 }
