@@ -477,6 +477,10 @@ nav .menu {
 
 /*============= Contact ===========*/
 
+#contact {
+
+}
+
 #contact button {
   justify-content: center;
   text-align: center;
@@ -498,3 +502,24 @@ nav .menu {
   margin-right: 0.75rem;
 }
 
+/*============= Footer ===========*/
+
+#footer {
+  background-color: var(--base-color);
+  padding: 2.5rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.09);
+}
+
+#footer a {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+#footer span {
+  color: var(--text-color-light);
+}
+
+#footer p {
+  color: var(--text-color-light);
+  padding-top: 0.5rem;
+}
