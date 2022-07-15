@@ -6,6 +6,7 @@
 }
 a {
   text-decoration: none;
+  color: var(--text-color)
 }
 
 img {
@@ -42,6 +43,7 @@ body {
   border-radius: 0.25rem;
   font: 500 1rem 'DM Sans', sans-serif;
   transition: background 0.3s;
+  border: none;
 
 }
 
@@ -124,11 +126,7 @@ body {
 }
 
 #header.scroll {
-<<<<<<< HEAD
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
-=======
-  box-shadow: rgba(0, 0, 0, 0.08);
->>>>>>> 444c4d3f83f43f047fcea585e367c7b641be8f16
 }
 
 main {
@@ -227,21 +225,14 @@ nav .menu {
 @keyframes slideUp {
   from {
     top: 0%
-<<<<<<< HEAD
-=======
   }
   to {
     top: -100%;
-  }
-}
->>>>>>> 444c4d3f83f43f047fcea585e367c7b641be8f16
-
   }
   to {
     top: -100%
   }
 }
-
 
 nav.show .menu{
   opacity: 1;
@@ -408,11 +399,33 @@ nav .menu {
   text-align: center;
 }
 
-<<<<<<< HEAD
+.card i {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--base-color)
+}
+
+.card .title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
 /*============= Testimonials ===========*/
 
 #testimonials {
   background: white;
+}
+
+#testimonials .container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#testimonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
 }
 
 #testimonials blockquote{
@@ -449,16 +462,39 @@ nav .menu {
   object-fit: cover;
   clip-path: circle();
   margin-right: 0.5rem;
-=======
-.card i {
-  display: block;
-  margin-bottom: 1.5rem;
-  font-size: 5rem;
-  color: var(--base-color)
 }
 
-.card .title {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
->>>>>>> 444c4d3f83f43f047fcea585e367c7b641be8f16
+/*===== Swiper =====*/
+
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
 }
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
+
+/*============= Contact ===========*/
+
+#contact button {
+  justify-content: center;
+  text-align: center;
+  width: 15rem;
+  height: 3.5rem;
+}
+
+#contact a button i {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+
+
+#contact a i{
+  font-size: 1.5rem;
+  color: var(--base-color);
+   margin-right: 0.75rem;
+}
+
